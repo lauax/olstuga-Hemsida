@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    background-color: aqua;
+    display: grid;
+    height: 100vh;
+}
+
+.logo {
+    grid-area: logo;
+    height: 4em;
+    padding-left: 1em;
+    margin-top: 0.6em;
+}
+
+nav {
+    height: 2em;
+    grid-area: nav;
+    display: grid;
+    grid-template: 
+    "menualt menualt menualt" 1fr;
+    justify-content: space-evenly;
+}
+
+
+.menualt{
+    color: #000;
+    font-weight: bold;
+    padding: 6px 1em;
+    border: solid 2px #000;
+    border-radius: 3px;
+    
+}
+.menualt:hover {
+    background-color: lightgrey;
+    border: solid 2px lightgrey;
+}
+
+
+.main {
+    background-color: green;
+    background-image: url('/images/bg-boka.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/*All styling, positionering och storlek för bodyn*/
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+
+
+
+.bokabord {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.container {
+    width: 360px;
+    margin: auto;
+    box-shadow: 5px 5px 50px dimgray;
+}
+
+/*All styling, storlek för texterna*/
+
+form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+/*Här har vi stylingen och storleken för placeholders*/
+
+form input {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 80%;
+    height: 20px;
+    margin-left: 2.2em;
+}
+
+/*Storlek och styling för knappen*/
+
+button {
+    margin-top: 2em;
+    width: 13em;
+    height: 2em;
+    margin-left: 7em;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+/*Styling för knappen*/
+
+button:hover {
+    background-color: green;
+}
+
+.main {
+    padding: 12em 0;
+    display: flex;
+    align-items: center;
+}
+.fieldset {
+    padding-bottom: 1em;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    justify-content: end;
+    padding-right: 20%;
+    display: grid;
+    grid-template:
+    "cpyrt insta fb" 1fr / 130px 30px 30px
+}
+
+.insta {
+    grid-area: cpyrt;
+}
+.fb {
+    grid-area: fb;
+}
+.insta {
+    grid-area: insta;
+}
