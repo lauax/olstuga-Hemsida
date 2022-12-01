@@ -44,7 +44,7 @@ nav {
 
 .main {
     background-color: green;
-    background-image: url('/images/bg-boka.png');
+    background-image: url('./images/bg-boka.png');
     background-position: center;
     background-size: cover;
 }
